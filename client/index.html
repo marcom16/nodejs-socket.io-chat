@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Chat con Socket.io y nodeJS</title>
+     <link rel="stylesheet" href="bt/bt.css">
+     <link rel="stylesheet" href="bt/master.css">
+     <script src="/socket.io/socket.io.js"></script>
+     <script src="main.js"></script>
+
+</head>
+<body>
+     <div class="container">
+          <br><br><br>
+          <div class="jumbotron">
+               <h2 class="text-center">Chat con Socket.io y nodeJS</h2>
+               <hr>
+               <div class="row">
+                    <div class="col-xs-12 caja" id="messages"></div>
+                    <hr>
+               </div>
+               <form onsubmit="return addMessage(this);">
+                    <div class="row">
+                         <div class="col-xs-8">
+                              <div class="form-group">
+                                   <input type="text" class="form-control" id="nickname" placeholder="Nick" />
+                                   <textarea id="text" class="form-control" rows="3" placeholder="Message"></textarea>
+                              </div>
+                         </div>
+                         <div class="col-xs-4">
+                              <div class="form-group">
+                                   <input type="submit" class="btn btn-primary btn-lg" value="enviar"/>
+
+                              </div>
+                         </div>
+                    </div>
+               </form>
+          </div>
+     </div>
+
+     <script src="/bt/jq.js"></script>
+     <script src="/bt/bt.js"></script>
+</body>
+</html>
