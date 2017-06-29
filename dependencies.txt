@@ -1,0 +1,8 @@
+
+* --save o -S es para guardar la dependencia solo en el proyecto
+* --save-dev o -D es para guardar la dependencia solo en el proyecto como herramienta de desarrollo
+
+Dependencias para el proyecto
+     > npm install express --save
+     > npm install socket.io --save
+     > npm install nodemon --save-dev
