@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# Instrucciones para instalar el proyecto
 
-You can use the [editor on GitHub](https://github.com/marcom16/nodejs-socket.io-chat/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Para clonar
+`$ git clone https://github.com/marcom16/nodejs-socket.io-chat.git`
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+`$ npm install`
 
-### Markdown
+`$ cd nodejs-socket.io-chat`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+`$ npm start`
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/marcom16/nodejs-socket.io-chat/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Si la app presenta errores cambie valor de:
+  `var socket = io.connect('http://`**"Coloque su IP"**`:6677', {'forceNew':true});`
+  
+### El documento se encuentra en:
+  `client/main.js`
